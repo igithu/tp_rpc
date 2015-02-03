@@ -17,7 +17,7 @@
 #include "proto/simple_rpc.pb.h"
 #include "../rpc/rpc_channel.h"
 
-using namespace simple_rpc_v2;
+using namespace tp_rpc;
 using namespace google::protobuf;
 using namespace echo;
 

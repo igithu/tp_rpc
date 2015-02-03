@@ -27,7 +27,7 @@
 
 #define SOCKINFO_MAXSIZE 128
 
-namespace simple_rpc_v2 {
+namespace tp_rpc {
 
 using std::string;
 

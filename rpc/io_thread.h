@@ -22,7 +22,7 @@
 
 #include "thread.h"
 
-namespace simple_rpc_v2 {
+namespace tp_rpc {
 
 using namespace PUBLIC_UTIL;
 
@@ -35,7 +35,7 @@ class IOThread : public Thread {
         virtual void Run();
 };
 
-}  // end of namespace simple_rpc_v2
+}  // end of namespace tp_rpc
 
 
 

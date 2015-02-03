@@ -32,7 +32,7 @@
 #include "thread_pool.h"
 
 
-namespace simple_rpc_v2 {
+namespace tp_rpc {
 
 using namespace PUBLIC_UTIL;
 using namespace google::protobuf;
@@ -104,7 +104,7 @@ class RpcServer {
 
 };
 
-}  // end of namespace simple_rpc_v2
+}  // end of namespace tp_rpc
 
 
 

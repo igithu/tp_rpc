@@ -21,7 +21,7 @@
 
 #include "rpc_server.h"
 
-namespace simple_rpc_v2 {
+namespace tp_rpc {
 
 #define MAXEVENTS 100
 
@@ -59,7 +59,7 @@ void IOThread::Run() {
 
 }
 
-}  // end of namespace simple_rpc_v2
+}  // end of namespace tp_rpc
 
 
 

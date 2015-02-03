@@ -19,7 +19,7 @@
 #include "proto/simple_rpc.pb.h"
 #include "../rpc/rpc_server.h"
 
-using namespace simple_rpc_v2;
+using namespace tp_rpc;
 using namespace echo;
 
 class EchoServiceImpl : public EchoService {

@@ -18,7 +18,7 @@
 
 #include <cstddef>
 
-namespace simple_rpc_v2 {
+namespace tp_rpc {
 
 uint32_t BKDRHash(const char *orig_str) {
 
@@ -32,7 +32,7 @@ uint32_t BKDRHash(const char *orig_str) {
     return (hash_code & 0x7FFFFFFF);
 }
 
-}  // end of namespace simple_rpc_v2
+}  // end of namespace tp_rpc
 
 
 

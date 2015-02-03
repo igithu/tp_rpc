@@ -24,7 +24,7 @@
 
 #include "rpc_util.h"
 
-namespace simple_rpc_v2 {
+namespace tp_rpc {
 
 //using std::string;
 
@@ -213,7 +213,7 @@ bool RpcServer::ErrorSendMsg(int32_t event_fd, const string& error_msg) {
     return true;
 }
 
-}  // end of namespace simple_rpc_v2
+}  // end of namespace tp_rpc
 
 
 

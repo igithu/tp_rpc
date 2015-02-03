@@ -33,7 +33,7 @@
 // define error output
 #define LOGERROR(format, args...) fprintf(stderr, format, ##args)
 
-namespace simple_rpc_v2 {
+namespace tp_rpc {
 
 
 int32_t ConnectionManager::FAMILY_ = AF_UNSPEC;

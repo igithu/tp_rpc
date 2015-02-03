@@ -28,7 +28,7 @@
 #include "atomic.h"
 #include "pthread_cond.h"
 
-namespace simple_rpc_v2 {
+namespace tp_rpc {
 
 using namespace PUBLIC_UTIL;
 
@@ -82,7 +82,7 @@ class ThreadPool {
 };
 
 
-} // end of namespace simple_rpc_v2
+} // end of namespace tp_rpc
 
 #endif  //__THREAD_POOL_H_
 

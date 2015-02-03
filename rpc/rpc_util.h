@@ -22,7 +22,7 @@
 
 #include <stdint.h>
 
-namespace simple_rpc_v2 {
+namespace tp_rpc {
 
 uint32_t BKDRHash(const char *orig_str);
 

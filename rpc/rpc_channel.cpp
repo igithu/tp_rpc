@@ -20,7 +20,7 @@
 #include "rpc_util.h"
 #include "rpc_msg.pb.h"
 
-namespace simple_rpc_v2 {
+namespace tp_rpc {
 
 Channel::Channel(const string& host, int32_t port) {
 }
@@ -126,7 +126,7 @@ bool FormatRecvMsg(const string& recv_str, Message* response) {
 }
 
 
-}  // end of namespace simple_rpc_v2
+}  // end of namespace tp_rpc
 
 
 

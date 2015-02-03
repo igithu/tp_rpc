@@ -26,7 +26,7 @@
 
 #include "connection_manager.h"
 
-namespace simple_rpc_v2 {
+namespace tp_rpc {
 
 using namespace google::protobuf;
 
@@ -49,7 +49,7 @@ class Channel : public RpcChannel {
         ConnectionManager connection_manager_;
 };
 
-}  // end of namespace simple_rpc_v2
+}  // end of namespace tp_rpc
 
 
 
