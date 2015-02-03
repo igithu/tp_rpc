@@ -1,0 +1,4 @@
+# tp_rpc
+在simple_rpc基础上改进，单线程服务改为线程池模式多线程服务
+
+与simple_rpc一样基于protobuf RPC框架实现RPC基本结构，服务线程采用线程池模式实现
