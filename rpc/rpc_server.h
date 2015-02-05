@@ -82,16 +82,14 @@ class RpcServer {
 
         //DISALLOW_COPY_AND_ASSIGN(RpcServer);
 
-    public:
-        // public because used by iothread
-        ConnectionManager* connection_manager_ptr_;
-
 
     private:
         
         PUBLIC_UTIL::Mutex hashmap_mutex_;
 
         HashMap method_hashmap_;
+
+        ConnectionManager* connection_manager_ptr_;
 
         IOThread* io_thread_ptr_;
 

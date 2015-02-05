@@ -2,10 +2,10 @@
 #SUBDIRS=src
 #DIST_SUBDIRS=src
 
-bin_PROGRAMS = rpc_client rpc_service
+bin_PROGRAMS = rpc_client rpc_server
 
 rpc_client_SOURCES = \
-		      ../cs_sample/rpc_client.cc \
+		      ../cs_sample/client.cc \
 		      ../cs_sample/proto/simple_rpc.pb.h \
 		      ../cs_sample/proto/simple_rpc.pb.cc \
 			  ../rpc/connection_manager.h \
@@ -25,8 +25,8 @@ rpc_client_LDADD = -lpthread -lz -ldl -lrt  \
 	               ../../third-64/protobuf/lib/*.a 
 #http_server_a_LDADD = ../third-64/libevent/lib/*.a
 
-rpc_service_SOURCES = \
-		      ../cs_sample/rpc_service.cc \
+rpc_server_SOURCES = \
+		      ../cs_sample/server.cc \
 		      ../cs_sample/proto/simple_rpc.pb.h \
 		      ../cs_sample/proto/simple_rpc.pb.cc \
 			  ../rpc/connection_manager.h \
@@ -44,12 +44,12 @@ rpc_service_SOURCES = \
 
 #INCLUDES = -I../third-64/libevent/include/
 #CXXFLAGS = -std=c++11 -Wall -g -fPIC
-rpc_service_CPPFLAGS = -I../../third-64/protobuf/include/ \
+rpc_server_CPPFLAGS = -I../../third-64/protobuf/include/ \
 					   -I../../third-64/boost/include/ \
 					   -I../../util/thread/include/ \
 					   -I../../util/tools/include/
-rpc_service_LDFLAGS =-DHAVE_INTTYPES_H -DHAVE_NETINET_IN_H -fpermissive 
-rpc_service_LDADD = -lpthread -lz -ldl -lrt  \
+rpc_server_LDFLAGS =-DHAVE_INTTYPES_H -DHAVE_NETINET_IN_H -fpermissive 
+rpc_server_LDADD = -lpthread -lz -ldl -lrt  \
 					../../third-64/protobuf/lib/*.a \
 					../../third-64/boost/lib/*.a
 #
