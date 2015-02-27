@@ -46,8 +46,7 @@ rpc_server_SOURCES = \
 #CXXFLAGS = -std=c++11 -Wall -g -fPIC
 rpc_server_CPPFLAGS = -I../../third-64/protobuf/include/ \
 					   -I../../third-64/boost/include/ \
-					   -I../../pub_util/thread/include/ \
-					   -I../../pub_util/tools/include/
+					   -I../../pub_util/ 
 rpc_server_LDFLAGS =-DHAVE_INTTYPES_H -DHAVE_NETINET_IN_H -fpermissive 
 rpc_server_LDADD = -lpthread -lz -ldl -lrt  \
 					../../third-64/protobuf/lib/*.a \
